@@ -63,7 +63,7 @@ function isLGSeven(number){
 Counts the minus numbers inside the input array as bad data and returns the number of bad data.
 */
 function findingBadData(numbers){
-    if(typeof numbers == 'object'){
+    if(Array.isArray(numbers)){
         let badData = [];
     for(let i = 0; i < numbers.length; i++){
         if(numbers[i] < 0){
